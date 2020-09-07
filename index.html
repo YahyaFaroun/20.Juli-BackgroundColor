@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{margin: 0;}
+        section{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            background-color: white;
+            height: 200px;
+            width: 400px;
+            border: 1px solid black;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        form input{
+            width: 200px;
+            height: 20px;
+        }
+        form input:last-child{
+            background-color: lime;
+            height: 30px;
+    
+        }
+
+
+        .yellow{
+            background-color: rgba(244, 244, 0, 6)
+        }
+        .pink{
+            background-color: pink;
+        }
+        .green{
+            background-color: #569632;
+        }
+        .black{
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <section id="hero">
+        <form action="">
+            <input type="text" name="" id="EingabeColor">
+            <h1>Give me a Color!</h1>
+            <input type="button" value="Senden" onclick="colorIt()">
+        </form>
+    </section>
+
+    <script>
+        function colorIt(){
+            console.log("functinierten");
+            document.getElementById("hero").style.backgroundColor = document.getElementById("EingabeColor").value;
+        }
+    </script>
+</body>
+</html>
